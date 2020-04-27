@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="principalMain">
+        <header id="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="sub-title">Thank you for talking the time to help us improve the platform</p>
+        </header>
+        <main id="secondMain">
+            <div class="onesDivs">  
+                <h3>Name</h3>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="onesDivs">
+                <h3>Email</h3>
+                <input type="text" name="email" placeholder="Enter your email">
+            </div>
+            <div class="onesDivs">
+                <h3>Age</h3>
+                <input type="text" name="age" placeholder="Age">
+            </div>
+            <div class="twosDivs">
+                <h3>Which option best describes your current role?</h3>
+                <select>
+                    <option class="option">Select current role</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="treeDivs_1">
+                <h3>Would you recommend freeCodeCamp to a friend?</h3>
+                <form>
+                    <label for="imputRadio">
+                        <input type="radio" name="radio" checked><h4>Definitely</h4>
+                    </label>
+                    <label for="imputRadio">
+                        <input type="radio" name="radio"><h4>Maybe</h4>
+                    </label>
+                    <label for="imputRadio">
+                        <input type="radio" name="radio"><h4>Not sure</h4>
+                    </label>
+                </form>
+            </div>
+            <div class="twosDivs">
+                <h3>What is your favourite feature of freeCodeCamp?</h3>
+                <select>
+                    <option class="option">Select an option</option>
+                    <option>Challenges</option>
+                    <option>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="treeDivs">
+                <h3>What would you like to see improved?(Check all that apply)</h3>
+                <form>
+                    <label for="inputCheck">
+                        <input type="checkbox" checked><h4>Front-end Projects</h4>
+                    </label> 
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>Back-end Projects</h4>
+                    </label>
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>Data Visualization</h4>    
+                    </label>
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>Challenges</h4>
+                    </label>
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>Open Source Community</h4>
+                    </label>
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>Gitter help rooms</h4>
+                    </label>
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>Videos</h4>
+                    </label>
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>City Meetups</h4>
+                    </label>
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>Wiki</h4>
+                    </label>
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>Forum</h4>
+                    </label>
+                    <label for="inputCheck">
+                        <input type="checkbox"><h4>Additional Courses</h4>
+                    </label>
+                </form>
+            </div>
+            <div class="fourDivs">
+                <h3>Any comments or suggestions?</h3>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter yourcomment here..."></textarea>
+            </div>
+            <div class="fourDivs">
+                <input type="submit" value="Submit">               
+            </div>
+        </main>
+    </div>
+</body>
+</html>
