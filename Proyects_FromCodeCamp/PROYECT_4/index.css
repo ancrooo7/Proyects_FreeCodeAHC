@@ -36,7 +36,7 @@ body {
 .firstDiv_a {
     padding-left: 1.5em;
     color: rgb(60, 60, 60);
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     border-bottom: 1px solid black;
 }
 [href*="#secondDiv_Intr"] {
@@ -48,7 +48,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1.5em 0 1.5em 2em;
+    padding: 1.5em 2em 1.5em 2em;
 }
 .secondDiv_divs {
     margin-bottom: 1.5em;
@@ -57,4 +57,32 @@ body {
     font-size: 2vw;
     font-weight: 100;
 }
- 
+p, code, li{
+    font-size: 1.2vw;
+    color: rgb(60, 60, 60);
+}
+.secondDiv_divs p {
+    margin: 1em 0 1em 1em;
+}
+.secondDiv_divs ul {
+    margin-left: 2em;
+}
+.secondDiv_divs ul li {
+    list-style: inside;
+    margin-bottom: .3em;
+}
+.secondDiv_divs code {
+    margin-left: 2.5em;
+    font-size: 1vw;
+    padding: 1em;
+    border-radius: 2px;
+    background-color: rgb(231, 231, 231);
+    text-align: justify;
+    display: block;
+}
+
+@media screen and(min-width: 768px) {
+    #firstDiv {
+        flex-direction: row;
+    }
+}
