@@ -7,26 +7,28 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div>
-        <h1>JS Documentation</h1>
-        <a href="#"><li>Introduction</li></a>
-        <a href="#"><li>What you should already know</li></a>
-        <a href="#"><li>JavaScript and Java</li></a>
-        <a href="#"><li>Hello world</li></a>
-        <a href="#"><li>Variables</li></a>
-        <a href="#"><li>Declaring variables</li></a>
-        <a href="#"><li>Variable scope</li></a>
-        <a href="#"><li>Global variables</li></a>
-        <a href="#"><li>Constants</li></a>
-        <a href="#"><li>Data types</li></a>
-        <a href="#"><li>if...else statement</li></a>
-        <a href="#"><li>while statement</li></a>
-        <a href="#"><li>Function declarations</li></a>
-        <a href="#"><li>Reference</li></a>
+    <div id="firstDiv">
+        <h1 id="firstDiv_h1">JS Documentation</h1>
+        <nav id="firstDiv_nav">
+            <a class="firstDiv_a" href="#secondDiv_Intr">Introduction</a>
+            <a class="firstDiv_a" href="#secondDiv_WhatYou">What you should already know</a>
+            <a class="firstDiv_a" href="#secondDiv_Java2">JavaScript and Java</a>
+            <a class="firstDiv_a" href="#secondDiv_Hello">Hello world</a>
+            <a class="firstDiv_a" href="#secondDiv_Var">Variables</a>
+            <a class="firstDiv_a" href="#secondDiv_Declar">Declaring variables</a>
+            <a class="firstDiv_a" href="#secondDiv_VarScope">Variable scope</a>
+            <a class="firstDiv_a" href="#secondDiv_VarGlobal">Global variables</a>
+            <a class="firstDiv_a" href="#secondDiv_Const">Constants</a>
+            <a class="firstDiv_a" href="#secondDiv_Data">Data types</a>
+            <a class="firstDiv_a" href="#secondDiv_Ifelse">if...else statement</a>
+            <a class="firstDiv_a" href="#secondDiv_While">while statement</a>
+            <a class="firstDiv_a" href="#secondDiv_Func">Function declarations</a>
+            <a class="firstDiv_a" href="#secondDiv_Refer">Reference</a>
+        </nav>
     </div>
-    <div>
-        <div>
-            <h2>Introduction</h2>
+    <div id="secondDiv">
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Intr">Introduction</h2>
             <p>
                 JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
             </p>
@@ -42,8 +44,8 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <h2>What you should already know</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2WhatYou">What you should already know</h2>
             <p>
                 This guide assumes you have the following basic background:
             </p>
@@ -59,8 +61,8 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <h2>JavaScript and Java</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Java2">JavaScript and Java</h2>
             <p>
                 JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
             </p>
@@ -71,8 +73,8 @@
                 JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
             </p>
         </div>
-        <div>
-            <h2>Hello world</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Hello">Hello world</h2>
             <p>
                 To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
             </p>
@@ -83,8 +85,8 @@
                 Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
             </p>
         </div>
-        <div>
-            <h2>Variables</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Var">Variables</h2>
             <p>
                 You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
             </p>
@@ -95,8 +97,8 @@
                 You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
             </p>
         </div>
-        <div>
-            <h2>Declaring variables</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Declar">Declaring variables</h2>
             <p>You can declare a variable in three ways:</p>
             <p>With the keyword var. For example,</p>
             <code>var x = 42.</code>
@@ -108,8 +110,8 @@
             <code>let y = 13.</code>
             <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
         </div>
-        <div>
-            <h2>Variable scope</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2VarScope">Variable scope</h2>
             <p>
                 When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
             </p>
@@ -122,8 +124,8 @@
                 if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined
             </code>
         </div>
-        <div>
-            <h2>Global variable</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2VarGlobal">Global variable</h2>
             <p>
                 Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
             </p>
@@ -131,8 +133,8 @@
                 Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
             </p>
         </div>
-        <div>
-            <h2>Constants</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Const">Constants</h2>
             <p>
                 You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
             </p>
@@ -157,8 +159,8 @@
                 const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
             </code>
         </div>
-        <div>
-            <h2>Data types</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Data">Data types</h2>
             <p>The latest ECMAScript standard defines seven data types:</p>
             <ul>
                 <li>Six data types that are primitives:</li>
@@ -178,8 +180,8 @@
                 Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.
             </p>
         </div>
-        <div>
-            <h2>if...else statement</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Ifelse">if...else statement</h2>
             <p>
                 Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
             </p>
@@ -217,8 +219,8 @@
                 if ((x = y)) { /* statements here */ }
             </code>
         </div>
-        <div>
-            <h2>while statement</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2While">while statement</h2>
             <p>
                 A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
             </p>
@@ -251,8 +253,8 @@
             </ul>
             <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
         </div>
-        <div>
-            <h2>Function declarations</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Func">Function declarations</h2>
             <p>
                 A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
             </p>
@@ -275,8 +277,8 @@
                 Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.
             </p>
         </div>
-        <div>
-            <h2>Reference</h2>
+        <div class="secondDiv_divs">
+            <h2 id="secondDiv_h2Refer">Reference</h2>
             <ul>
                 <li>
                     All the documentation in this page is taken from <a href="">MDN</a>
