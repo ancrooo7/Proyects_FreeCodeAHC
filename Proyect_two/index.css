@@ -1,0 +1,40 @@
+* {
+    list-style: none;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+}
+
+#title {
+    display: flex;
+    font-weight: lighter;   
+}
+
+main{
+    display: flex;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
