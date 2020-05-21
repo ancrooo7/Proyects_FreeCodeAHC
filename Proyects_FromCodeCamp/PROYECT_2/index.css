@@ -4,13 +4,13 @@
     margin: 0;
     list-style: none;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 body {
-    background: linear-gradient(90deg, rgba(55, 2, 105, 0.7), rgba(109, 54, 173, 0.7)), url(images/survey-form-background.jpeg);
+    background: linear-gradient(90deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(images/survey-form-background.jpeg);
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
-    font-family: 'Poppins', sans-serif;
 }
 #principalMain {
     display: grid;
@@ -18,6 +18,7 @@ body {
     grid-template-rows: auto auto;
     grid-template-areas: ". mainPrincipal_1 ."
                          ". mainPrincipal_2 .";
+    font-family: 'Poppins', sans-serif;
 }
 header {grid-area: mainPrincipal_1;} main {grid-area: mainPrincipal_2;}
 
@@ -29,7 +30,7 @@ header {grid-area: mainPrincipal_1;} main {grid-area: mainPrincipal_2;}
     justify-content: space-evenly;
 }
 #title {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 100;
 }
 #sub-title {
@@ -41,7 +42,7 @@ header {grid-area: mainPrincipal_1;} main {grid-area: mainPrincipal_2;}
 }
 
 #secondMain {
-    background:  rgba(55, 2, 105, 0.8);
+    background:  rgba(1, 6, 36, 0.5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     padding: 20px 30px;
@@ -88,14 +89,4 @@ label h4 {
     margin-top: 1em;
 }
 
-
-_ La visión de una maquina por usuario, se podria simplificar en los siguientes elementos:
-        ~ Harware ----> Sistema Operativo(Diseñador de SO) ----> Traductores(Diseñador de traductores) ----> Programa de aplicación(Programador) ---->Usuario.
-        ~ Estos de forma interna construyen:
-             *Recursos:
-                  [Bajo Nivel(Físicos)].
-                  [Alto Nivel(Virtuales)].
-     _ Un SO es un programa o conjunto que gestiona los recursos de Hardware y provee servicios a los programas de aplicación, ejecutandose en modo privilegiado respecto de los restantes.
-
--Tipos de Sistemas Operativos.
-     
+#textarea { padding: .5em;}
