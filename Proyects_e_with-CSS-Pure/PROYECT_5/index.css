@@ -135,11 +135,23 @@ h4:hover::before{content: "< "; color: rgb(194, 76, 33);} h4:hover::after{conten
     margin-top: 2em;
     display: flex;
     flex-direction: row;
+    height: 150px;
 }
 .aMain_3 {
-    margin: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    transition: height 1s;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 2px 2px rgb(30, 30, 30);
 }
-
+.aMain_3:hover{
+    height: 70px;
+}
 footer {
     background-color: #303841;
     display: flex;
