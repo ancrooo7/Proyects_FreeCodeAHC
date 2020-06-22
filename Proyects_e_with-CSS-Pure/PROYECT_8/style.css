@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #900c3f;
+    border: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #ccafaf;
+}
+
+.container {
+    background-color: #fc9d9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 50vw;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+#item-1 {
+    background-color: #900c3f;
+    border-radius: 50%;
+    box-shadow: 5px 0px 3px #900c3f;
+    margin-bottom: .5em;
+}
+
+#item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#author {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1em;
+}
+
+#info, #job, button{
+    font-family: 'Merriweather', serif;
+    font-size: 13px;
+}
+
+#info {
+    width: 50%;
+    height: 15vh;
+    margin-top: 1em;
+    text-align: justify;
+}
+
+#job, button {
+    text-transform: capitalize;
+}
+
+#item-3 {
+    display: grid;
+    grid-template-columns: auto 1.5em auto 1.5em auto;
+    grid-template-rows: repeat(3, 2em);
+    grid-template-areas: "btnprev . . . btnnext"
+                         ". . . . ."
+                         "surp surp surp surp surp";
+    height: 15vh;
+}
+
+#item-3 button {
+    background-color: #fc9d9d;
+    color: #900c3f;
+    padding: .5em 1em;
+    border-radius: 5px;
+}
+
+.prev-btn {
+    grid-area: btnprev;
+}
+.prev-btn::after {
+    content: "<";
+}
+.next-btn {
+    grid-area: btnnext;
+}
+.next-btn::after {
+    content: ">";
+}
+.btn-arrow {
+    font-weight: 900;
+    font-size: 20px;
+    align-self: start;
+}
+.random-btn {
+    grid-area: surp;
+    border: 1px solid #900c3f;
+    grid-row-end: 3;
+}
