@@ -49,6 +49,10 @@ body {
 #nav-bar ul li {
     display: flex;
     padding: 20px 0;
+    transition: border-bottom .3s ease-in-out;
+}
+#nav-bar ul li:hover {
+    border-bottom: 2px solid black;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
