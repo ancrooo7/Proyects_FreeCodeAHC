@@ -1,0 +1,50 @@
+.onoffswitch {
+    justify-self: start;
+    align-self: end;
+    margin: 0 0 3em 3em;
+    position: relative; width: 100px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #9DAB86; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 33px; padding: 0; line-height: 33px;
+    font-size: 13px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "PLAY";
+    padding-left: 10px;
+    background-color: #EB8242; color: #DAE8C3;
+}
+.onoffswitch-inner:after {
+    content: "PAUSE";
+    padding-right: 10px;
+    background-color: #E6A157; color: #DAE8C3;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 22px; margin: 5.5px;
+    background: #C9753D;
+    position: absolute; top: 0; bottom: 0;
+    right: 63px;
+    border: 2px solid #9DAB86; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.slide:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.slide:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}

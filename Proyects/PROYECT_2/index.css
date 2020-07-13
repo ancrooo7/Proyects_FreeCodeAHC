@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(90deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(images/survey-form-background.jpeg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#principalMain {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: ". mainPrincipal_1 ."
+                         ". mainPrincipal_2 .";
+    font-family: 'Poppins', sans-serif;
+}
+header {grid-area: mainPrincipal_1;} main {grid-area: mainPrincipal_2;}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-evenly;
+}
+#title {
+    font-size: 30px;
+    font-weight: 100;
+}
+#sub-title {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 100;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+#secondMain {
+    background:  rgba(1, 6, 36, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-rows: repeat(9, auto);
+}
+h3, h4 {
+    font-weight: 100;
+    font-size: 15px;
+    margin: .3em 0;
+}
+[class*="Divs"] {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.onesDivs h3 {
+    justify-self: start;
+}
+.onesDivs input, .twosDivs select {
+    border: none;
+    border-radius: 2px;
+    padding: 5px 7px;
+}
+.twosDivs select{
+    color: rgb(109, 109, 109);
+    background-color: white;
+}
+.twosDivs select option {
+    color: rgb(63, 63, 63);
+}
+label {
+    display: flex;
+    align-items: center;
+}
+label h4 {
+    margin-left: .6em;
+}
+[type*="submit"] {
+    border: none;
+    background-color: rgb(90, 190, 90);
+    border-radius: 3px;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+#textarea { padding: .5em;}

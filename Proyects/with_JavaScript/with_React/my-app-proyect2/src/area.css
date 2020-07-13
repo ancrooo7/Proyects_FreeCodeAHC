@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 80vw;
+    grid-template-rows: 40vh 40vh;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.editor {
+    background-color: #2bb2bb;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.editado {
+    background-color: #87d4c5;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.text-area {
+    border: 5px solid #595238;  
+    margin-bottom: "2em";
+}
