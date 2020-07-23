@@ -111,7 +111,7 @@ main {
 .features {
     display: flex;
     justify-content: flex-start;
-    width: 900px;    
+    max-width: 900px;    
     margin: 40px 0;
 }
 
@@ -146,9 +146,10 @@ main {
 }
 
 #section_2 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2em;
 }
 
 #section_2 ul li{
@@ -213,4 +214,21 @@ main {
     bottom: 15px;
     right: 22px;
     color: rgb(131, 131, 131);
+}
+
+
+@media only screen and (max-width: 700px) {
+    #header-img {
+        display: none;
+    }
+    #section_2 ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #section_2 ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
 }

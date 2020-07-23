@@ -11,7 +11,6 @@ btn.addEventListener("click", () => {
 
     color.textContent = hex;
     document.body.style.backgroundColor = hex;
-    document.p.style.color = hex;
 })
 
 const getChangeColor = () => {

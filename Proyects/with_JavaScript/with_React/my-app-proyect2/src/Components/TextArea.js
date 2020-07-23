@@ -1,5 +1,6 @@
 import React from 'react';
-import ContentFromTextA from './contentInTextArea'
+import ContentFromTextA from './contentInTextArea';
+import {contenido} from "../arrayAndObject";
 
 const styleArea = {
     width: "80vw",
@@ -11,7 +12,7 @@ class TextArea extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: "Andres Crespi" 
+            value: "Andrés Crespi"
         }
 
         this.handleChange = this.handleChange.bind(this);

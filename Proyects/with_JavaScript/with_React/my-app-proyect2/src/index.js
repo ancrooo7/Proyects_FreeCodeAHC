@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import TextArea from './TextArea';
+import TextArea from './Components/TextArea';
 
 ReactDOM.render(
   <TextArea/ >,

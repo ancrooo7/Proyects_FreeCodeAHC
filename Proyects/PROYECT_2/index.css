@@ -10,14 +10,13 @@ body {
     background: linear-gradient(90deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(images/survey-form-background.jpeg);
     background-attachment: fixed;
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 #principalMain {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    grid-template-areas: ". mainPrincipal_1 ."
-                         ". mainPrincipal_2 .";
+    grid-template-areas: ". mainPrincipal_1 ." ". mainPrincipal_2 .";
     font-family: 'Poppins', sans-serif;
 }
 header {grid-area: mainPrincipal_1;} main {grid-area: mainPrincipal_2;}

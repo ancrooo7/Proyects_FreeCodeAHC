@@ -1,5 +1,6 @@
 import React from 'react';
-import './area.css';
+import '../area.css';
+import {getTag} from "./funciones";
 
 export default class ContentFromTextA extends React.Component {
     constructor(props) {
@@ -21,10 +22,7 @@ export default class ContentFromTextA extends React.Component {
                     value={valor}
                     onChange={this.handleChange}
                 />
-                <textarea 
-                    className="editado text-area"
-                    value={valor}
-                />
+                {getTag(valor)}
             </div>
         )
     }

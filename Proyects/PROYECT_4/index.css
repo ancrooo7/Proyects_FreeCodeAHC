@@ -58,7 +58,7 @@ body {
     font-weight: 100;
 }
 p, code, li{
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     color: rgb(60, 60, 60);
 }
 .secondDiv_divs p {
@@ -83,6 +83,6 @@ p, code, li{
 
 @media screen and(min-width: 768px) {
     #firstDiv {
-        flex-direction: row;
+        display: none;
     }
 }
