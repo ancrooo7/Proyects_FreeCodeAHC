@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #006a71;
+    font-family: 'Inconsolata', monospace;
+}
+body {
+    background-color: #ffffdd;
+}
+.section-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    font-size: 5vw;
+}
+.lorem-form {
+    align-self: flex-start;
+    margin: 2em 0;
+    margin-left: 1em;
+}
+.btn {
+    border: none;
+}
+#amount, .btn {
+    border: medium solid #006a71;
+    padding: .3em .1em;
+    background-color: white;
+}
+h3, label, .btn {
+    text-transform: capitalize;
+}
+.lorem-text {
+    width: 80vw;
+}
+p {
+    margin-bottom: 3em;
+}
