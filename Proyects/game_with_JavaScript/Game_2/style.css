@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+* {
+    font-family: 'Audiowide', cursive;
+    color: #411f1f;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px black;
+}
+body {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #cedebd;
+}
+.head {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+h1 {
+    font-size: 4vw;
+}
+.same {
+    display: flex;
+}
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 2px 2px 5px black;
+    width: 618px;
+    height: 618px;
+}
+.mole {
+    background-image: url(./mole_1.jpg);
+    background-size: cover;
+}
+.square {
+    width: 200px;
+    height: 200px;
+    border: solid #411f1f;
+}

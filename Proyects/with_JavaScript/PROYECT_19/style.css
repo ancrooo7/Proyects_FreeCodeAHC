@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Patua One', cursive;
+    color: #dd2c00;
+}
+body {
+    background-color: #b2ebf2;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #00bcd4;
+    width: 70vw;
+    padding: 1em;
+    border: medium solid #ff5722;
+}
+.title {
+    font-size: 3vw;
+    text-transform: capitalize;
+    padding: .5em 0;
+}
+.action {
+    display: flex;
+    flex-direction: column;
+}
+#entry {
+    padding: .5em 1em;
+    border: medium solid #ff5722;
+}
+.boton {
+    margin-top: 1em;
+    align-self: center;
+    background-color: #b2ebf2;
+    padding: 1em 2em;
+    border: medium solid #ff5722;
+}
+.message {
+    text-transform: uppercase;
+    align-self: center;
+}

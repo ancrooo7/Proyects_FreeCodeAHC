@@ -1,0 +1,34 @@
+* {
+    font-family: 'Passion One', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--font-color);
+}
+body {
+    --font-color: #fa1616;
+    --first-background-color: #e4f9ff;
+    --second-background-color: #12cad6;
+    --borer-color: #0fabbc;
+}
+.background {
+    background-color: var(--first-background-color);
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+h3 {
+    font-size: 3em;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 600px;
+    background-color: var(--second-background-color);
+}

@@ -1,0 +1,46 @@
+* {
+    font-family: 'Rubik Mono One', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #111d5e;
+}
+.result, .sum, .containt, body {
+    display: flex;
+    flex-direction: row;
+}
+body {
+    height: 100vh;
+    background-color: #ffbd69;
+    justify-content: center;
+    align-items: center;
+}
+.containt {
+    justify-content: space-between;
+    background-color: #f37121;
+    border: medium solid #c70039;
+    width: 80vw;
+    height: 50vh;
+}
+.sum {
+    align-self: center;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.sumandos {
+    border: medium solid #c70039;
+    background-color: #ffbd69;
+}
+.sumar {
+    padding: 2em;
+}
+.result {
+    align-self: center;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.style-input {
+    padding: 1em .5em;
+    border: medium solid #c70039;
+    background-color: #ffbd69;
+}
