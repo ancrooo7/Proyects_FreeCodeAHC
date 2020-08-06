@@ -22,12 +22,15 @@ body {
 }
 .show-menu {
     height: 100vh;
-    width: 30rem;
+    width: 50vw;
     display: flex;
     justify-content: flex-end;
     border-right: 3px solid #bac964;
     box-shadow: 19px 5px 59px -36px rgba(0,0,0,0.75);
     transition: width 1.2s ease-in-out;
+}
+h1 {
+    font-size: 3vw;
 }
 .hidden-menu {
     width: 0;
@@ -41,4 +44,10 @@ body {
 #bar-menu > h1 {
     align-self: center;
     justify-self: center;
+}
+
+@media only screen and (max-width: 500px) {
+    button, .show-menu{
+        display: none   ;
+    }
 }

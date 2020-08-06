@@ -19,13 +19,15 @@ body {
 }
 
 #main {
+    display: flex;
+    flex-direction: column;
     background-color: #eaddcf;
     padding: 4em;
     border-radius: 1em;
 }
 
 .btn {
-    font-size: 42px;
+    font-size: 5vw;
     padding: .5em;
     margin-bottom: 1em;
     border-radius: .5em;

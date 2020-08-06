@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 .items {
-    width: 40%;
+    width: 40vw;
     height: auto;
     padding: .5em;
     border: 1px solid #2f2519;
@@ -64,4 +64,10 @@ h3 {
 }
 .show-text .button-up {
     display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .items {
+        width: 70vw;
+    }
 }

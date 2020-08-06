@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_1.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <title>Document</title>
 </head>
-<body> 
+<body class="container"> 
     <main id="quote-box">
-        <i id="text" class="jam jam-pin">Life isn’t about getting and having, it’s about giving and being.</i>
+        <div class="container-phrase">
+            <i class="jam jam-pin" id="item_3"></i>
+            
+            <p id="text">isn’t about getting and having, it’s about giving and being.</p>
+        </div>
         <cite id="author">Kevin Kruse</cite>
-        <i class="jam jam-tumblr items" id="item_1"></i>
-        <i class="jam jam-twitter items" id="item_2"></i>
-        <button id="button" class="new-quote">New quote</button>
+        <div class="container-button">
+            <div class="container-red">
+                <i class="jam jam-tumblr items" id="item_1"></i>
+                <i class="jam jam-twitter items" id="item_2"></i>
+            </div>
+            <button id="button" class="new-quote">New quote</button>
+        </div>
     </main>
     <script src="programming.js"></script>
 </body>

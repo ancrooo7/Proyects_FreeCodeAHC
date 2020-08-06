@@ -104,7 +104,7 @@ const phrases = [
 ]; 
 const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
-const text = document.getElementById("text");
+//const text = document.getElementById("text");
 
 const randomBtn = document.querySelector(".new-quote");
 
@@ -128,6 +128,7 @@ function calColor() {
     document.getElementById("button").style.backgroundColor = hex;
     document.getElementById("item_1").style.backgroundColor = hex;
     document.getElementById("item_2").style.backgroundColor = hex;
+    document.getElementById("item_3").style.color = hex;
     document.getElementById("text").style.color = hex;
     document.getElementById("author").style.color = hex;
 }
