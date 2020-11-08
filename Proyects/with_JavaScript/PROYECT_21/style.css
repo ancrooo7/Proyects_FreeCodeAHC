@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: url(ethan-robertson-SYx3UCHZJlo-unsplash.jpg);
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #393b44;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 4rem;
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: row;
+}
+
+[class*='-c'] {
+    margin: 0 1em;
+    text-align: center;
+}
+
+.big-text {
+    font-size: 3rem;
+}
+
+[class*='-c'] span {
+    font-size: 1.2rem;
+}

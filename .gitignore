@@ -1,8 +1,5 @@
-*.txt
-*.jpg
-*.jpeg
-*.png
-*.mp4
-*.svg
 .vscode
 PROYECTS_OF_LOGIC
+PROYECT_10
+with_Vue.js
+*.txt
