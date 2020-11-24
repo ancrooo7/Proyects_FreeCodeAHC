@@ -1,0 +1,24 @@
+html {
+  /* Variables tipográficas */
+  --text-2xs: 10px;
+  --text-xs: 12px;
+  --text-s: 14px;
+  --text-m: 16px;
+  --text-l: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --text-6xl: 64px;
+
+  /* Escala aplicada */
+  --text-caption: var(--text-xs);
+  --text-note: var(--text-x);
+  --text-base: var(--text-m);
+  --text-subheader: var(--text-2xl);
+  --text-title: var(--text-3xl);
+  --text-headline: var(--text-4xl);
+  --text-display: var(--text-5xl);
+  --text-jumbo: var(--text-6xl);
+}
