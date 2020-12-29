@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+#first-div {
+    display: grid;
+    grid-gap: 2em 0;
+    grid-template-rows: auto auto auto;
+    margin: 20px 8px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 8px;
+}
+img {
+    max-width: 100%;
+}
+#item-1, #item-3 {
+    justify-self: center;
+}
+#item-1 {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+#item-1 > h1 {
+    font-size: 3em;
+    margin-top: 1em;
+    padding: .5em 0;
+    text-align: center;
+}
+#item-1 > h4 {
+    justify-self: center;
+    font-weight: 100;
+}
+
+#item-2 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+}
+
+#item_2-1 {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    margin: 0 10px;
+    background-color: #fff;
+}#item_2-1 > h4 {
+    font-weight: 100;
+    justify-self: center;
+    padding: 1.2em 0;
+    text-align: center;
+}
+#item_2-2 {
+    display: grid;
+}#item_2-2 > h3 {
+    justify-self: center;
+    margin: 3em 0;
+}.class-repeat {
+    width: 40%;
+    justify-self: center;
+}#item_2-2 > ul > li {
+    display: flex;
+    margin: 1em 0;
+    line-height: 1.8;
+}
+#item_2-3 {
+    display: grid;
+    width: 40%;
+    justify-self: center;
+    line-height: 1.8;
+}#cite {
+    padding-top: 2em;
+}
+#item-3 {
+    margin: 2em 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .class-repeat {
+        width: 100%;
+        padding: 0 10px;
+        justify-self: center;
+    }
+}
