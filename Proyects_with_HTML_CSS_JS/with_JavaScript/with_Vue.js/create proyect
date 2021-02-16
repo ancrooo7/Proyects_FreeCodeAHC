@@ -1,0 +1,5 @@
+Con cli una vez instalado(version 3.0 para arriba):
+    _ "vue create nameProject"
+    _ Elegis si queres que se configure por default o manual.
+    _ cd nameProject
+    _ npm run serve ----> Inicia el servicio para poder ejecutar la aplicación en un browser
