@@ -1,0 +1,117 @@
+/* Colors: https://coolors.co/8e9b90-93c0a4-b6c4a2-d4cdab-dce2bd */
+
+/* Global styles
+---------------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #1c1f1c;
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.links {
+    color: #DCE2BD;
+    background-color: #8E9B90;
+    padding: .3em .5em;
+    border: 1px solid #D4CDAB;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.links:hover {
+    background-color: #D4CDAB; 
+    color: #1c1f1c;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.font-title, .quotes {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 35px;
+}
+
+/* Profile
+---------------------------------------------------*/
+.work-experience, .profile, .info {
+    background-color: #B6C4A2;
+}
+
+/* Projects
+---------------------------------------------------*/
+.projects, .education {
+    background-color: #93C0A4;
+}
+/* Work experience
+---------------------------------------------------*/
+
+/* Education
+---------------------------------------------------*/ 
+.education {
+    background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+
+.education h3 + p {
+    font-style: italic;
+}
+
+/* Contact Info
+---------------------------------------------------*/
+.info-list {
+    line-height: 2.5;
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-list a {
+    display: inline-block;
+}
+
+/* Responsive
+---------------------------------------------------*/
+@media screen and (min-width: 600px) {
+    header, footer {
+        text-align: center;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    .info-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    h1,
+    h2 {
+        line-height: 1.2;
+    }
+}
