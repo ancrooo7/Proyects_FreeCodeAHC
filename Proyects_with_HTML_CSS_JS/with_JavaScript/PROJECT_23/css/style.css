@@ -1,0 +1,19 @@
+body {
+  background-color: #444;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: inline-flex;
+}
+
+.text {
+  margin: 0.5rem;
+  padding: 0.1rem;
+  width: 100%;
+}
+
+iframe {
+  background-color: white;
+}
